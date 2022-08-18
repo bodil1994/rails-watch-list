@@ -1,0 +1,8 @@
+<%# placeholder for in li when movie done "link_to movie.title, movie_path(movie)"" %>
+<h1><%= @list.name %></h1>
+<ul>
+  <% @list.movies.each do |movie| %>
+    <li><%= movie.title %></li>
+  <% end %>
+</ul>
+<%= link_to "Back to all lists", lists_path %>
