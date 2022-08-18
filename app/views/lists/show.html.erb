@@ -1,8 +1,9 @@
 <%# placeholder for in li when movie done "link_to movie.title, movie_path(movie)"" %>
 <h1><%= @list.name %></h1>
 <ul>
-  <% @list.movies.each do |movie| %>
-    <li><%= movie.title %></li>
+  <% @list.bookmarks.each do |bookmark| %>
+    <li><%= bookmark.comment %> <%= bookmark.movie.title %></li>
   <% end %>
 </ul>
+<%= link_to "Add a movie to the list", new_list_bookmark_path(@list) %>
 <%= link_to "Back to all lists", lists_path %>
