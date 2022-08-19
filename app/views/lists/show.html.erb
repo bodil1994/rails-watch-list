@@ -1,5 +1,6 @@
 <%# placeholder for in li when movie done "link_to movie.title, movie_path(movie)"" %>
 <h1><%= @list.name %></h1>
+<%= cl_image_tag @list.photo.key, height: 300, width: 400, crop: :fill %>
 <ul>
   <% @list.bookmarks.each do |bookmark| %>
     <li><%= bookmark.comment %> <%= bookmark.movie.title %> <%=link_to "🗑", list_bookmark_path(bookmark, @list),

@@ -69,3 +69,4 @@ gem 'rails-controller-testing', group: [ :test ]
 gem 'foreman', '~> 0.87.2'
 gem "simple_form", github: "heartcombo/simple_form"
 gem "dotenv-rails", groups: [:development, :test]
+gem "cloudinary"
