@@ -70,3 +70,5 @@ gem 'foreman', '~> 0.87.2'
 gem "simple_form", github: "heartcombo/simple_form"
 gem "dotenv-rails", groups: [:development, :test]
 gem "cloudinary"
+gem "rest-client"
+gem "open-uri"
